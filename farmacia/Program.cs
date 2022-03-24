@@ -6,7 +6,7 @@ namespace farmacia
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Test World!");
+            Console.WriteLine("Hello World!");
         }
     }
 }
