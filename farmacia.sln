@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.810.20
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "farmacia", "farmacia\farmacia.csproj", "{4A718FFB-8B53-4585-8DB5-6D6C63C2816C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarieModele", "Lab04_Exemple-edited\Lab04_Exemple\EvidentaStudenti\LibrarieModele\LibrarieModele.csproj", "{F97EAB45-8CCA-4FF2-AF1D-DF3B0059A028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NivelStocareDate", "Lab04_Exemple-edited\Lab04_Exemple\EvidentaStudenti\NivelStocareDate\NivelStocareDate.csproj", "{F7A1654D-F953-46B1-8CAE-7580B2FF9639}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4A718FFB-8B53-4585-8DB5-6D6C63C2816C}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{4A718FFB-8B53-4585-8DB5-6D6C63C2816C}.Debug|anycpu.Build.0 = Debug|anycpu
-		{4A718FFB-8B53-4585-8DB5-6D6C63C2816C}.Release|anycpu.ActiveCfg = Release|anycpu
-		{4A718FFB-8B53-4585-8DB5-6D6C63C2816C}.Release|anycpu.Build.0 = Release|anycpu
+		{4A718FFB-8B53-4585-8DB5-6D6C63C2816C}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{4A718FFB-8B53-4585-8DB5-6D6C63C2816C}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{4A718FFB-8B53-4585-8DB5-6D6C63C2816C}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{4A718FFB-8B53-4585-8DB5-6D6C63C2816C}.Release|anycpu.Build.0 = Release|Any CPU
+		{F97EAB45-8CCA-4FF2-AF1D-DF3B0059A028}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{F97EAB45-8CCA-4FF2-AF1D-DF3B0059A028}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{F97EAB45-8CCA-4FF2-AF1D-DF3B0059A028}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{F97EAB45-8CCA-4FF2-AF1D-DF3B0059A028}.Release|anycpu.Build.0 = Release|Any CPU
+		{F7A1654D-F953-46B1-8CAE-7580B2FF9639}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{F7A1654D-F953-46B1-8CAE-7580B2FF9639}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{F7A1654D-F953-46B1-8CAE-7580B2FF9639}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{F7A1654D-F953-46B1-8CAE-7580B2FF9639}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

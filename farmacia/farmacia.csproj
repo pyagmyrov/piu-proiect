@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+    <StartArguments>Blana am spart tot salaru loft cand o zbura porcul</StartArguments>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
     <ProjectGuid>{4A718FFB-8B53-4585-8DB5-6D6C63C2816C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>farmacia</RootNamespace>
     <AssemblyName>farmacia</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,12 +30,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Medicament.cs" />
     <Compile Include="Famracia.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lab04_Exemple-edited\Lab04_Exemple\EvidentaStudenti\LibrarieModele\LibrarieModele.csproj">
+      <Project>{f97eab45-8cca-4ff2-af1d-df3b0059a028}</Project>
+      <Name>LibrarieModele</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lab04_Exemple-edited\Lab04_Exemple\EvidentaStudenti\NivelStocareDate\NivelStocareDate.csproj">
+      <Project>{f7a1654d-f953-46b1-8cae-7580b2ff9639}</Project>
+      <Name>NivelStocareDate</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
