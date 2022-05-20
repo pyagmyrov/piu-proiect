@@ -5,3 +5,8 @@
 5;Nurafen;16 ;21;
 6;Analgin;23 RON;33;
 7;Nurafen;44 RON;144;
+8;Analgin;23 EUR;33;
+9;Analgin;21 RON;33;
+10;Nurafen;12s RON;12;
+11;analgin;21 RON;11;
+12;Nurafen;12 RON;12;

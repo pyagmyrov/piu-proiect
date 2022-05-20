@@ -61,6 +61,7 @@
             this.NumeText.Size = new System.Drawing.Size(229, 35);
             this.NumeText.TabIndex = 3;
             this.NumeText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.NumeText.TextChanged += new System.EventHandler(this.NumeText_TextChanged);
             // 
             // numeLbl
             // 
@@ -122,6 +123,7 @@
             this.cantitateTxtBox.Size = new System.Drawing.Size(229, 35);
             this.cantitateTxtBox.TabIndex = 7;
             this.cantitateTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cantitateTxtBox.TextChanged += new System.EventHandler(this.cantitateTxtBox_TextChanged);
             // 
             // adaugareMedicamentBtn
             // 
