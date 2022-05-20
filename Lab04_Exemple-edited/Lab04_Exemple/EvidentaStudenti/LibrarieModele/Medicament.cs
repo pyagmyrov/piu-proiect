@@ -61,6 +61,15 @@ namespace LibrarieModele
         {
             return pret;
         }
+        public void SetPret(String pret)
+        {
+            this.pret = pret;
+        }
+        public void SetNume(String nume)
+        {
+            this.nume = nume;
+        }
+      
         public void setCantitae(int cantitate)
         {
             this.cantitate = cantitate;

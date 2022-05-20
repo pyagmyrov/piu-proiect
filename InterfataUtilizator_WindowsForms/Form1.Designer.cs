@@ -1,4 +1,5 @@
-﻿namespace InterfataUtilizator_WindowsForms
+﻿using System.Collections.Generic;
+namespace InterfataUtilizator_WindowsForms
 {
     partial class Farmacia
     {
@@ -191,7 +192,7 @@
             this.toateScreen2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(58)))), ((int)(((byte)(71)))));
             this.toateScreen2.Location = new System.Drawing.Point(207, 5);
             this.toateScreen2.Name = "toateScreen2";
-            this.toateScreen2.Size = new System.Drawing.Size(724, 529);
+            this.toateScreen2.Size = new System.Drawing.Size(724, 532);
             this.toateScreen2.TabIndex = 5;
             this.toateScreen2.Load += new System.EventHandler(this.toateScreen2_Load);
             // 
@@ -226,7 +227,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(935, 538);
@@ -261,7 +261,6 @@
         private System.Windows.Forms.Button despreButton;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Button addButton;
-        private ToateScreen toateScreen1;
         private AddScreen addScreen1;
         private UpdateScreen updateScreen1;
         private DespreScreen despreScreen1;

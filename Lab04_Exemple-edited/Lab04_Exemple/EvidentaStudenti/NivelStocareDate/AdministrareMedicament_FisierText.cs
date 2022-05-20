@@ -55,5 +55,14 @@ namespace NivelStocareDate
 
             return medicamenti.Cast<Medicament>().ToList();
         }
+
+         public void ClearFile()
+        {
+            using (StreamWriter streamWriterFisierText = new StreamWriter("db.txt", false))
+            {
+                streamWriterFisierText.Write(string.Empty);
+            }
+        }
+       
     }
 }
