@@ -99,9 +99,20 @@ namespace InterfataUtilizator_WindowsForms
                 {
                     adminMedicament.AddMedicament(medic);
                 }
-             
-                
+
                
+                dataGridViewUpdScren.Rows.Clear();
+                for (int i = 0; i < medicamenti.Count(); i++)
+                {
+                    int idc = medicamenti[i].GetIdMedicament();
+                    string idS = Convert.ToString(idc);
+                    int cantiate = medicamenti[i].GetCantitate();
+                    string cantitateS = Convert.ToString(cantiate);
+
+                    String[] row = { idS, medicamenti[i].GetNume(), medicamenti[i].GetPret(), cantitateS };
+                    dataGridViewUpdScren.Rows.Add(row);
+                }
+
 
 
             }
@@ -111,22 +122,6 @@ namespace InterfataUtilizator_WindowsForms
             }
         }
 
-        private void refreshBtnUpdScren_Click(object sender, EventArgs e)
-        {
-
-            AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText("db.txt");
-            List<Medicament> medicamenti = adminMedicament.GetMedicament();
-            dataGridViewUpdScren.Rows.Clear();
-            for (int i = 0; i < medicamenti.Count(); i++)
-            {
-                int id = medicamenti[i].GetIdMedicament();
-                string idS = Convert.ToString(id);
-                int cantiate = medicamenti[i].GetCantitate();
-                string cantitateS = Convert.ToString(cantiate);
-
-                String[] row = { idS, medicamenti[i].GetNume(), medicamenti[i].GetPret(), cantitateS };
-                dataGridViewUpdScren.Rows.Add(row);
-            }
-        }
+       
     }
 }

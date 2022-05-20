@@ -40,7 +40,6 @@
             this.CantTextUpdScren = new System.Windows.Forms.TextBox();
             this.currencyUpdScren = new System.Windows.Forms.ComboBox();
             this.updateButtonUpdScren = new System.Windows.Forms.Button();
-            this.refreshBtnUpdScren = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdScren)).BeginInit();
             this.SuspendLayout();
             // 
@@ -186,23 +185,12 @@
             this.updateButtonUpdScren.UseVisualStyleBackColor = false;
             this.updateButtonUpdScren.Click += new System.EventHandler(this.updateButtonUpdScren_Click);
             // 
-            // refreshBtnUpdScren
-            // 
-            this.refreshBtnUpdScren.Location = new System.Drawing.Point(622, 366);
-            this.refreshBtnUpdScren.Name = "refreshBtnUpdScren";
-            this.refreshBtnUpdScren.Size = new System.Drawing.Size(75, 23);
-            this.refreshBtnUpdScren.TabIndex = 13;
-            this.refreshBtnUpdScren.Text = "refresh";
-            this.refreshBtnUpdScren.UseVisualStyleBackColor = true;
-            this.refreshBtnUpdScren.Click += new System.EventHandler(this.refreshBtnUpdScren_Click);
-            // 
             // UpdateScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(58)))), ((int)(((byte)(71)))));
-            this.Controls.Add(this.refreshBtnUpdScren);
             this.Controls.Add(this.updateButtonUpdScren);
             this.Controls.Add(this.currencyUpdScren);
             this.Controls.Add(this.CantTextUpdScren);
@@ -238,6 +226,5 @@
         private System.Windows.Forms.TextBox CantTextUpdScren;
         private System.Windows.Forms.ComboBox currencyUpdScren;
         private System.Windows.Forms.Button updateButtonUpdScren;
-        private System.Windows.Forms.Button refreshBtnUpdScren;
     }
 }
