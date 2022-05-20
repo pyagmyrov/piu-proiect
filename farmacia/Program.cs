@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using LibrarieModele;
 using NivelStocareDate;
@@ -25,7 +26,7 @@ namespace Farmacia
             int nrMedicamenti = 0;
             // acest apel ajuta la obtinerea numarului de studenti inca de la inceputul executiei
             // astfel incat o eventuala adaugare sa atribuie un IdStudent corect noului student
-            adminMedicament.GetMedicament(out nrMedicamenti);
+            adminMedicament.GetMedicament();
 
             string optiune;
             do
@@ -63,8 +64,8 @@ namespace Farmacia
 
                         break;
                     case "F":
-                        Medicament[] medicamenti = adminMedicament.GetMedicament(out nrMedicamenti);
-                        AfisareMedicamentii(medicamenti, nrMedicamenti);
+                        List<Medicament> medicamenti = adminMedicament.GetMedicament();
+                        AfisareMedicamentii(medicamenti);
                         Console.ReadKey();
                         Console.Clear();
 
@@ -181,13 +182,12 @@ namespace Farmacia
 
         }
 
-        public static void AfisareMedicamentii(Medicament[] medicamenti, int nrMedicament)
+        public static void AfisareMedicamentii(List<Medicament> medicamenti)
         {
             Console.WriteLine("\n------------------------------ MEDICAMENTII -----------------------------");
-            for (int contor = 0; contor < nrMedicament; contor++)
+           foreach(Medicament m in medicamenti)
             {
-               
-                AfisareMedicament(medicamenti[contor]);
+                AfisareMedicament(m);
             }
             Console.WriteLine("\n-------------------------------------------------------------------------\n");
         }

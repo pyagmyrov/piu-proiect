@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarieModele", "Lab04_Exe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NivelStocareDate", "Lab04_Exemple-edited\Lab04_Exemple\EvidentaStudenti\NivelStocareDate\NivelStocareDate.csproj", "{F7A1654D-F953-46B1-8CAE-7580B2FF9639}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfataUtilizator_WindowsForms", "InterfataUtilizator_WindowsForms\InterfataUtilizator_WindowsForms.csproj", "{AE9187E8-2FD7-4273-A779-B4BE2D328DB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -27,6 +29,10 @@ Global
 		{F7A1654D-F953-46B1-8CAE-7580B2FF9639}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{F7A1654D-F953-46B1-8CAE-7580B2FF9639}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{F7A1654D-F953-46B1-8CAE-7580B2FF9639}.Release|anycpu.Build.0 = Release|Any CPU
+		{AE9187E8-2FD7-4273-A779-B4BE2D328DB0}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{AE9187E8-2FD7-4273-A779-B4BE2D328DB0}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{AE9187E8-2FD7-4273-A779-B4BE2D328DB0}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{AE9187E8-2FD7-4273-A779-B4BE2D328DB0}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

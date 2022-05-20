@@ -1,6 +1,9 @@
 ﻿using LibrarieModele;
 using System.IO;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace NivelStocareDate
 {
@@ -23,31 +26,35 @@ namespace NivelStocareDate
             // instructiunea 'using' va apela la final streamWriterFisierText.Close();
             // al doilea parametru setat la 'true' al constructorului StreamWriter indica
             // modul 'append' de deschidere al fisierului
-            using (StreamWriter streamWriterFisierText = new StreamWriter(numeFisier, true))
+            string locatieFisierSolutie = Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            string caleCompletaFisier = locatieFisierSolutie + "\\" + "medicamenti.txt";
+            using (StreamWriter streamWriterFisierText = new StreamWriter(caleCompletaFisier, true))
             {
                 streamWriterFisierText.WriteLine(medicament.ConversieLaSir_PentruFisier());
             }
         }
 
-        public Medicament[] GetMedicament(out int nrMedicamenti)
+        public List<Medicament> GetMedicament()
         {
-            Medicament[] medicamenti = new Medicament[NR_MAX_MEDICAMENTI];
+            ArrayList medicamenti = new ArrayList();
+         
 
             // instructiunea 'using' va apela streamReader.Close()
             using (StreamReader streamReader = new StreamReader(numeFisier))
             {
                 string linieFisier;
-                nrMedicamenti = 0;
+            
 
                 // citeste cate o linie si creaza un obiect de tip Student
                 // pe baza datelor din linia citita
                 while ((linieFisier = streamReader.ReadLine()) != null)
                 {
-                    medicamenti[nrMedicamenti++] = new Medicament(linieFisier);
+                    Medicament medicament = new Medicament(linieFisier);
+                    medicamenti.Add(medicament);
                 }
             }
 
-            return medicamenti;
+            return medicamenti.Cast<Medicament>().ToList();
         }
     }
 }
