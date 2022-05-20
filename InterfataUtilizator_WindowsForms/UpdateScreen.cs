@@ -122,6 +122,22 @@ namespace InterfataUtilizator_WindowsForms
             }
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+                dataGridViewUpdScren.Rows.Clear();
+               AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText("db.txt");
+            List<Medicament> medicamenti = adminMedicament.GetMedicament();
+
+            for (int i = 0; i < medicamenti.Count(); i++)
+            {
+                int id = medicamenti[i].GetIdMedicament();
+                string idS = Convert.ToString(id);
+                int cantiate = medicamenti[i].GetCantitate();
+                string cantitateS = Convert.ToString(cantiate);
+
+                String[] row = { idS, medicamenti[i].GetNume(), medicamenti[i].GetPret(), cantitateS };
+                dataGridViewUpdScren.Rows.Add(row);
+            }
+        }
     }
 }

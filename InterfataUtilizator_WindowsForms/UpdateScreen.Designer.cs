@@ -40,6 +40,7 @@
             this.CantTextUpdScren = new System.Windows.Forms.TextBox();
             this.currencyUpdScren = new System.Windows.Forms.ComboBox();
             this.updateButtonUpdScren = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdScren)).BeginInit();
             this.SuspendLayout();
             // 
@@ -185,12 +186,23 @@
             this.updateButtonUpdScren.UseVisualStyleBackColor = false;
             this.updateButtonUpdScren.Click += new System.EventHandler(this.updateButtonUpdScren_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(622, 366);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "refresh";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // UpdateScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(58)))), ((int)(((byte)(71)))));
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.updateButtonUpdScren);
             this.Controls.Add(this.currencyUpdScren);
             this.Controls.Add(this.CantTextUpdScren);
@@ -226,5 +238,6 @@
         private System.Windows.Forms.TextBox CantTextUpdScren;
         private System.Windows.Forms.ComboBox currencyUpdScren;
         private System.Windows.Forms.Button updateButtonUpdScren;
+        private System.Windows.Forms.Button button1;
     }
 }
