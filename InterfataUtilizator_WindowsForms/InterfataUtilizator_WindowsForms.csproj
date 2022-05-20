@@ -152,5 +152,14 @@
   <ItemGroup>
     <None Include="Resources\aboutMe.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="insta.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
