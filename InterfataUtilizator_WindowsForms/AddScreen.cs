@@ -66,9 +66,8 @@ namespace InterfataUtilizator_WindowsForms
                             bool isPretNumber = int.TryParse(pretTxtBox.Text, out int nr);
                             if (isPretNumber)
                             {
-                                string locatieFisierSolutie = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-                                string caleCompletaFisier = locatieFisierSolutie + "\\" + "medicamenti.txt";
-                                AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText(caleCompletaFisier);
+                                
+                                AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText("db.txt");
                                 List<Medicament> medicamenti = adminMedicament.GetMedicament();
                                 int id = medicamenti.Count() + 1;
                                 Medicament medicament = new Medicament(id, NumeText.Text, pretTxtBox.Text + " " + currencyDropDown.Text, Convert.ToInt32(cantitateTxtBox.Text));
@@ -114,6 +113,11 @@ namespace InterfataUtilizator_WindowsForms
             cantitateTxtBox.BackColor = Color.FromArgb(30, 39, 46);
             adaugareMedicamentBtn.Text = "Adaugare";
             adaugareMedicamentBtn.BackColor = Color.FromArgb(30, 39, 46);
+        }
+
+        private void AddScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

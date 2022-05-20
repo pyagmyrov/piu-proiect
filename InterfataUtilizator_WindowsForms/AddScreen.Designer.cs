@@ -178,6 +178,7 @@
             this.Controls.Add(this.AddLabel);
             this.Name = "AddScreen";
             this.Size = new System.Drawing.Size(723, 533);
+            this.Load += new System.EventHandler(this.AddScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

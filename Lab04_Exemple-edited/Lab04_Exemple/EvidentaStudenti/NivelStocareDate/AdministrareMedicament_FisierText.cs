@@ -14,10 +14,10 @@ namespace NivelStocareDate
 
         public AdministrareMedicament_FisierText(string numeFisier)
         {
-            this.numeFisier = numeFisier;
+            this.numeFisier = "db.txt";
             // se incearca deschiderea fisierului in modul OpenOrCreate
             // astfel incat sa fie creat daca nu exista
-            Stream streamFisierText = File.Open(numeFisier, FileMode.OpenOrCreate);
+            Stream streamFisierText = File.Open("db.txt", FileMode.OpenOrCreate);
             streamFisierText.Close();
         }
 
@@ -26,9 +26,8 @@ namespace NivelStocareDate
             // instructiunea 'using' va apela la final streamWriterFisierText.Close();
             // al doilea parametru setat la 'true' al constructorului StreamWriter indica
             // modul 'append' de deschidere al fisierului
-            string locatieFisierSolutie = Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-            string caleCompletaFisier = locatieFisierSolutie + "\\" + "medicamenti.txt";
-            using (StreamWriter streamWriterFisierText = new StreamWriter(caleCompletaFisier, true))
+            
+            using (StreamWriter streamWriterFisierText = new StreamWriter("db.txt", true))
             {
                 streamWriterFisierText.WriteLine(medicament.ConversieLaSir_PentruFisier());
             }

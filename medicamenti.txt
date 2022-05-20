@@ -1,6 +1,6 @@
 1;Nurafen;25ron;100;
 2;Parectamol;10;150;
-0;Analgin;44;120;
+3;Analgin;44;120;
 4;Stiramon;32;44;
 5;Nurafen;16 ;21;
 6;Analgin;23 RON;33;
@@ -10,3 +10,5 @@
 10;Nurafen;12s RON;12;
 11;analgin;21 RON;11;
 12;Nurafen;12 RON;12;
+1;Nurafen;12 RON;11;
+13;Analgin;13 RON;13;

@@ -32,9 +32,8 @@ namespace InterfataUtilizator_WindowsForms
             dataGridMedicament.Columns[3].Name = "Cantiate";
 
 
-            string locatieFisierSolutie = Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-            string caleCompletaFisier = locatieFisierSolutie + "\\" + "medicamenti.txt";
-            AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText(caleCompletaFisier);
+        
+            AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText("db.txt");
             List<Medicament> medicamenti = adminMedicament.GetMedicament();
 
             for (int i = 0; i < medicamenti.Count(); i++)
@@ -72,9 +71,8 @@ namespace InterfataUtilizator_WindowsForms
         private void refreshBtn_Click(object sender, EventArgs e)
         {
             dataGridMedicament.Rows.Clear();
-            string locatieFisierSolutie = Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-            string caleCompletaFisier = locatieFisierSolutie + "\\" + "medicamenti.txt";
-            AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText(caleCompletaFisier);
+           
+            AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText("db.txt");
             List<Medicament> medicamenti = adminMedicament.GetMedicament();
 
             for (int i = 0; i < medicamenti.Count(); i++)
