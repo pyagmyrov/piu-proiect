@@ -139,5 +139,10 @@ namespace InterfataUtilizator_WindowsForms
                 dataGridViewUpdScren.Rows.Add(row);
             }
         }
+
+        private void idTextUpdScren_TextChanged(object sender, EventArgs e)
+        {
+            updateButtonUpdScren.BackColor = Color.FromArgb(30, 39, 46);
+        }
     }
 }

@@ -49,9 +49,10 @@
             this.ActualizareLabel.AutoSize = true;
             this.ActualizareLabel.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ActualizareLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ActualizareLabel.Location = new System.Drawing.Point(26, 15);
+            this.ActualizareLabel.Location = new System.Drawing.Point(52, 29);
+            this.ActualizareLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ActualizareLabel.Name = "ActualizareLabel";
-            this.ActualizareLabel.Size = new System.Drawing.Size(122, 30);
+            this.ActualizareLabel.Size = new System.Drawing.Size(245, 57);
             this.ActualizareLabel.TabIndex = 1;
             this.ActualizareLabel.Text = "Actualizare";
             // 
@@ -59,9 +60,10 @@
             // 
             this.dataGridViewUpdScren.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewUpdScren.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUpdScren.Location = new System.Drawing.Point(31, 59);
+            this.dataGridViewUpdScren.Location = new System.Drawing.Point(62, 113);
+            this.dataGridViewUpdScren.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridViewUpdScren.Name = "dataGridViewUpdScren";
-            this.dataGridViewUpdScren.Size = new System.Drawing.Size(666, 301);
+            this.dataGridViewUpdScren.Size = new System.Drawing.Size(1332, 579);
             this.dataGridViewUpdScren.TabIndex = 2;
             this.dataGridViewUpdScren.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUpdScren_CellContentClick);
             // 
@@ -70,9 +72,10 @@
             this.idLblUpdScren.AutoSize = true;
             this.idLblUpdScren.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idLblUpdScren.ForeColor = System.Drawing.Color.White;
-            this.idLblUpdScren.Location = new System.Drawing.Point(172, 386);
+            this.idLblUpdScren.Location = new System.Drawing.Point(344, 742);
+            this.idLblUpdScren.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.idLblUpdScren.Name = "idLblUpdScren";
-            this.idLblUpdScren.Size = new System.Drawing.Size(22, 17);
+            this.idLblUpdScren.Size = new System.Drawing.Size(42, 36);
             this.idLblUpdScren.TabIndex = 3;
             this.idLblUpdScren.Text = "ID";
             // 
@@ -81,19 +84,22 @@
             this.idTextUpdScren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
             this.idTextUpdScren.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.idTextUpdScren.ForeColor = System.Drawing.Color.White;
-            this.idTextUpdScren.Location = new System.Drawing.Point(172, 409);
+            this.idTextUpdScren.Location = new System.Drawing.Point(344, 787);
+            this.idTextUpdScren.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.idTextUpdScren.Name = "idTextUpdScren";
-            this.idTextUpdScren.Size = new System.Drawing.Size(42, 20);
+            this.idTextUpdScren.Size = new System.Drawing.Size(82, 31);
             this.idTextUpdScren.TabIndex = 4;
+            this.idTextUpdScren.TextChanged += new System.EventHandler(this.idTextUpdScren_TextChanged);
             // 
             // numeLblUpdScren
             // 
             this.numeLblUpdScren.AutoSize = true;
             this.numeLblUpdScren.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numeLblUpdScren.ForeColor = System.Drawing.Color.White;
-            this.numeLblUpdScren.Location = new System.Drawing.Point(220, 386);
+            this.numeLblUpdScren.Location = new System.Drawing.Point(440, 742);
+            this.numeLblUpdScren.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.numeLblUpdScren.Name = "numeLblUpdScren";
-            this.numeLblUpdScren.Size = new System.Drawing.Size(45, 17);
+            this.numeLblUpdScren.Size = new System.Drawing.Size(90, 36);
             this.numeLblUpdScren.TabIndex = 3;
             this.numeLblUpdScren.Text = "Nume";
             this.numeLblUpdScren.Click += new System.EventHandler(this.label1_Click);
@@ -103,9 +109,10 @@
             this.numeTextUpdScren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
             this.numeTextUpdScren.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numeTextUpdScren.ForeColor = System.Drawing.Color.White;
-            this.numeTextUpdScren.Location = new System.Drawing.Point(223, 409);
+            this.numeTextUpdScren.Location = new System.Drawing.Point(446, 787);
+            this.numeTextUpdScren.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.numeTextUpdScren.Name = "numeTextUpdScren";
-            this.numeTextUpdScren.Size = new System.Drawing.Size(80, 20);
+            this.numeTextUpdScren.Size = new System.Drawing.Size(158, 31);
             this.numeTextUpdScren.TabIndex = 4;
             // 
             // pretLblUpdScren
@@ -113,9 +120,10 @@
             this.pretLblUpdScren.AutoSize = true;
             this.pretLblUpdScren.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pretLblUpdScren.ForeColor = System.Drawing.Color.White;
-            this.pretLblUpdScren.Location = new System.Drawing.Point(309, 386);
+            this.pretLblUpdScren.Location = new System.Drawing.Point(618, 742);
+            this.pretLblUpdScren.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.pretLblUpdScren.Name = "pretLblUpdScren";
-            this.pretLblUpdScren.Size = new System.Drawing.Size(33, 17);
+            this.pretLblUpdScren.Size = new System.Drawing.Size(65, 36);
             this.pretLblUpdScren.TabIndex = 3;
             this.pretLblUpdScren.Text = "Pret";
             // 
@@ -124,9 +132,10 @@
             this.pretTextUpdScren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
             this.pretTextUpdScren.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pretTextUpdScren.ForeColor = System.Drawing.Color.White;
-            this.pretTextUpdScren.Location = new System.Drawing.Point(309, 409);
+            this.pretTextUpdScren.Location = new System.Drawing.Point(618, 787);
+            this.pretTextUpdScren.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pretTextUpdScren.Name = "pretTextUpdScren";
-            this.pretTextUpdScren.Size = new System.Drawing.Size(54, 20);
+            this.pretTextUpdScren.Size = new System.Drawing.Size(106, 31);
             this.pretTextUpdScren.TabIndex = 4;
             // 
             // CantLblUpdScren
@@ -134,9 +143,10 @@
             this.CantLblUpdScren.AutoSize = true;
             this.CantLblUpdScren.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CantLblUpdScren.ForeColor = System.Drawing.Color.White;
-            this.CantLblUpdScren.Location = new System.Drawing.Point(437, 386);
+            this.CantLblUpdScren.Location = new System.Drawing.Point(874, 742);
+            this.CantLblUpdScren.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.CantLblUpdScren.Name = "CantLblUpdScren";
-            this.CantLblUpdScren.Size = new System.Drawing.Size(64, 17);
+            this.CantLblUpdScren.Size = new System.Drawing.Size(126, 36);
             this.CantLblUpdScren.TabIndex = 3;
             this.CantLblUpdScren.Text = "Cantitate";
             // 
@@ -145,9 +155,10 @@
             this.CantTextUpdScren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
             this.CantTextUpdScren.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CantTextUpdScren.ForeColor = System.Drawing.Color.White;
-            this.CantTextUpdScren.Location = new System.Drawing.Point(437, 409);
+            this.CantTextUpdScren.Location = new System.Drawing.Point(874, 787);
+            this.CantTextUpdScren.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.CantTextUpdScren.Name = "CantTextUpdScren";
-            this.CantTextUpdScren.Size = new System.Drawing.Size(73, 20);
+            this.CantTextUpdScren.Size = new System.Drawing.Size(144, 31);
             this.CantTextUpdScren.TabIndex = 4;
             // 
             // currencyUpdScren
@@ -160,9 +171,10 @@
             "RON",
             "EUR",
             "USD"});
-            this.currencyUpdScren.Location = new System.Drawing.Point(369, 406);
+            this.currencyUpdScren.Location = new System.Drawing.Point(738, 781);
+            this.currencyUpdScren.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.currencyUpdScren.Name = "currencyUpdScren";
-            this.currencyUpdScren.Size = new System.Drawing.Size(62, 23);
+            this.currencyUpdScren.Size = new System.Drawing.Size(120, 40);
             this.currencyUpdScren.TabIndex = 11;
             this.currencyUpdScren.SelectedIndexChanged += new System.EventHandler(this.currencyUpdScren_SelectedIndexChanged);
             // 
@@ -177,9 +189,10 @@
             this.updateButtonUpdScren.ForeColor = System.Drawing.Color.Transparent;
             this.updateButtonUpdScren.Image = global::InterfataUtilizator_WindowsForms.Properties.Resources.update;
             this.updateButtonUpdScren.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.updateButtonUpdScren.Location = new System.Drawing.Point(254, 452);
+            this.updateButtonUpdScren.Location = new System.Drawing.Point(508, 869);
+            this.updateButtonUpdScren.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.updateButtonUpdScren.Name = "updateButtonUpdScren";
-            this.updateButtonUpdScren.Size = new System.Drawing.Size(136, 45);
+            this.updateButtonUpdScren.Size = new System.Drawing.Size(272, 87);
             this.updateButtonUpdScren.TabIndex = 12;
             this.updateButtonUpdScren.Text = "Actualizare";
             this.updateButtonUpdScren.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -188,9 +201,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(622, 366);
+            this.button1.Location = new System.Drawing.Point(1244, 704);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(150, 44);
             this.button1.TabIndex = 13;
             this.button1.Text = "refresh";
             this.button1.UseVisualStyleBackColor = true;
@@ -198,7 +212,7 @@
             // 
             // UpdateScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(58)))), ((int)(((byte)(71)))));
@@ -215,8 +229,9 @@
             this.Controls.Add(this.idLblUpdScren);
             this.Controls.Add(this.dataGridViewUpdScren);
             this.Controls.Add(this.ActualizareLabel);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "UpdateScreen";
-            this.Size = new System.Drawing.Size(723, 533);
+            this.Size = new System.Drawing.Size(1446, 1025);
             this.Load += new System.EventHandler(this.UpdateScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdScren)).EndInit();
             this.ResumeLayout(false);
