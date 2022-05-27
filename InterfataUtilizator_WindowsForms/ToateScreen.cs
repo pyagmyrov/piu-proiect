@@ -25,11 +25,12 @@ namespace InterfataUtilizator_WindowsForms
         public ToateScreen()
         {
             InitializeComponent();
-            dataGridMedicament.ColumnCount = 4;
-            dataGridMedicament.Columns[0].Name = "ID";
-            dataGridMedicament.Columns[1].Name = "Nume";
-            dataGridMedicament.Columns[2].Name = "Pret";
-            dataGridMedicament.Columns[3].Name = "Cantiate";
+           
+            dataGridMedicament.ColumnCount = 3;
+      
+            dataGridMedicament.Columns[0].Name = "Nume";
+            dataGridMedicament.Columns[1].Name = "Pret";
+            dataGridMedicament.Columns[2].Name = "Cantiate";
 
 
         
@@ -38,12 +39,11 @@ namespace InterfataUtilizator_WindowsForms
 
             for (int i = 0; i < medicamenti.Count(); i++)
             {
-                int id = medicamenti[i].GetIdMedicament();
-                string idS = Convert.ToString(id);
+      
                 int cantiate = medicamenti[i].GetCantitate();
                 string cantitateS = Convert.ToString(cantiate);
 
-                String[] row = {idS, medicamenti[i].GetNume(), medicamenti[i].GetPret(), cantitateS};
+                String[] row = { medicamenti[i].GetNume(), medicamenti[i].GetPret(), cantitateS};
                 dataGridMedicament.Rows.Add(row);
             }
         }
@@ -77,14 +77,69 @@ namespace InterfataUtilizator_WindowsForms
 
             for (int i = 0; i < medicamenti.Count(); i++)
             {
-                int id = medicamenti[i].GetIdMedicament();
-                string idS = Convert.ToString(id);
+
                 int cantiate = medicamenti[i].GetCantitate();
                 string cantitateS = Convert.ToString(cantiate);
 
-                String[] row = { idS, medicamenti[i].GetNume(), medicamenti[i].GetPret(), cantitateS };
+                String[] row = { medicamenti[i].GetNume(), medicamenti[i].GetPret(), cantitateS };
                 dataGridMedicament.Rows.Add(row);
             }
         }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText("db.txt");
+            List<Medicament> medicamenti = adminMedicament.GetMedicament();
+           
+            string medicamentToSearch = searchText.Text;
+            if(medicamentToSearch == String.Empty)
+            {
+                dataGridMedicament.Rows.Clear();
+                for (int i = 0; i < medicamenti.Count(); i++)
+                {
+
+                    int cantiate = medicamenti[i].GetCantitate();
+                    string cantitateS = Convert.ToString(cantiate);
+
+                    String[] row = { medicamenti[i].GetNume(), medicamenti[i].GetPret(), cantitateS };
+                    dataGridMedicament.Rows.Add(row);
+                }
+
+            }
+            else
+            {
+                bool found = false;
+                for (int i = 0; i < medicamenti.Count(); i++)
+                {
+                    if (medicamenti[i].GetNume() == medicamentToSearch)
+                    {
+                        found = true;
+                        dataGridMedicament.Rows.Clear();
+                        int cantiate = medicamenti[i].GetCantitate();
+                        string cantitateS = Convert.ToString(cantiate);
+                        String[] row = { medicamenti[i].GetNume(), medicamenti[i].GetPret(), cantitateS };
+                        dataGridMedicament.Rows.Add(row);
+                    }
+
+                }
+                if (found)
+                {
+                    searchBtn.BackColor = Color.FromArgb(46, 204, 113);
+                }
+                else
+                {
+                    searchBtn.BackColor = Color.FromArgb(232, 65, 24);
+                }
+
+            }
+          
+
+        }
+
+        private void searchText_TextChanged(object sender, EventArgs e)
+        {
+            searchBtn.BackColor = Color.FromArgb(30, 39, 46);
+        }
+
     }
 }
