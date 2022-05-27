@@ -111,7 +111,7 @@ namespace InterfataUtilizator_WindowsForms
                 bool found = false;
                 for (int i = 0; i < medicamenti.Count(); i++)
                 {
-                    if (medicamenti[i].GetNume() == medicamentToSearch)
+                    if (medicamenti[i].GetNume().ToLower() == medicamentToSearch.ToLower())
                     {
                         found = true;
                         dataGridMedicament.Rows.Clear();

@@ -28,8 +28,6 @@ namespace InterfataUtilizator_WindowsForms
             InitializeComponent();
             currencyDropDown.SelectedIndex = 0;
             this.currencyDropDown.DataSource = Enum.GetValues(typeof (Currencies));
-
-
         }
 
         private void currencyDropDown_SelectedIndexChanged(object sender, EventArgs e)
