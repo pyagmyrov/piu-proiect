@@ -28,6 +28,7 @@ namespace InterfataUtilizator_WindowsForms
             InitializeComponent();
             currencyDropDown.SelectedIndex = 0;
             this.currencyDropDown.DataSource = Enum.GetValues(typeof (Currencies));
+
         }
 
         private void currencyDropDown_SelectedIndexChanged(object sender, EventArgs e)
@@ -73,18 +74,34 @@ namespace InterfataUtilizator_WindowsForms
                             bool isPretNumber = int.TryParse(pretTxtBox.Text, out int nr);
                             if (isPretNumber)
                             {
-                                
-                                AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText("db.txt");
-                                List<Medicament> medicamenti = adminMedicament.GetMedicament();
-                                int id = medicamenti.Count() + 1;
-                                Medicament medicament = new Medicament(id, NumeText.Text, pretTxtBox.Text + " " + currencyDropDown.Text, Convert.ToInt32(cantitateTxtBox.Text));
-                                id++;
-                                adminMedicament.AddMedicament(medicament);
-                                NumeText.Text = "";
-                                pretTxtBox.Text = "";
-                                cantitateTxtBox.Text = "";
-                                adaugareMedicamentBtn.Text = "Added";
-                                adaugareMedicamentBtn.BackColor = Color.Green;
+
+                                double nrPret;
+                                if (double.TryParse(pretTxtBox.Text, out nrPret))
+                                {
+                                    if(nrPret > 0)
+                                    {
+                                        AdministrareMedicament_FisierText adminMedicament = new AdministrareMedicament_FisierText("db.txt");
+                                        List<Medicament> medicamenti = adminMedicament.GetMedicament();
+                                        int id = medicamenti.Count() + 1;
+                                        Medicament medicament = new Medicament(id, NumeText.Text, pretTxtBox.Text + " " + currencyDropDown.Text, Convert.ToInt32(cantitateTxtBox.Text));
+                                        id++;
+                                        adminMedicament.AddMedicament(medicament);
+                                        NumeText.Text = "";
+                                        pretTxtBox.Text = "";
+                                        cantitateTxtBox.Text = "";
+                                        adaugareMedicamentBtn.Text = "Added";
+                                        adaugareMedicamentBtn.BackColor = Color.Green;
+                                    }
+                                    else
+                                    {
+                                        pretTxtBox.BackColor = Color.Red;
+                                    }
+                                }
+                                else
+                                {
+                                    pretTxtBox.BackColor = Color.Red;
+                                }
+                                   
                             }
                             else
                             {
