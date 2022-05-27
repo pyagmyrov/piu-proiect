@@ -19,7 +19,7 @@ namespace InterfataUtilizator_WindowsForms
     {
     
     
-    
+        
 
 
         public ToateScreen()

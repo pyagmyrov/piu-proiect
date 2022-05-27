@@ -15,17 +15,26 @@ namespace InterfataUtilizator_WindowsForms
 {
     public partial class AddScreen : UserControl
     {
-       
+
+        enum Currencies
+        {
+            RON,
+            EUR,
+            USD
+        }
+
         public AddScreen()
         {
             InitializeComponent();
             currencyDropDown.SelectedIndex = 0;
+            this.currencyDropDown.DataSource = Enum.GetValues(typeof (Currencies));
+
 
         }
 
         private void currencyDropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
